@@ -1,1 +1,1 @@
-# 2022_1st_AI_practical_course
+# 2022_1차_AI실무교육과정
