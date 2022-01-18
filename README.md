@@ -1,0 +1,1 @@
+# 2022_1st_AI_practical_course
