@@ -1,0 +1,1156 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "3주차(금)_CNN실습(공유).ipynb의 사본",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU",
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "440b5446030a42c09e4b61d346490ac9": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "HBoxView",
+            "_dom_classes": [],
+            "_model_name": "HBoxModel",
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "box_style": "",
+            "layout": "IPY_MODEL_8a9e954eb2f943c5b8cd44644d0065b8",
+            "_model_module": "@jupyter-widgets/controls",
+            "children": [
+              "IPY_MODEL_9a2b0e2c1b424cf9aa07c30674fb69ba",
+              "IPY_MODEL_92713dcda985456f9beeb8445b8c5604",
+              "IPY_MODEL_581d8f3ca49e40c18039ac4979952684"
+            ]
+          }
+        },
+        "8a9e954eb2f943c5b8cd44644d0065b8": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        },
+        "9a2b0e2c1b424cf9aa07c30674fb69ba": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "HTMLView",
+            "style": "IPY_MODEL_df6f88ffef294408859a90f35df20a0f",
+            "_dom_classes": [],
+            "description": "",
+            "_model_name": "HTMLModel",
+            "placeholder": "​",
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "value": "100%",
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "description_tooltip": null,
+            "_model_module": "@jupyter-widgets/controls",
+            "layout": "IPY_MODEL_0cd2f502bc34446094d86e3966b9c78f"
+          }
+        },
+        "92713dcda985456f9beeb8445b8c5604": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "ProgressView",
+            "style": "IPY_MODEL_362d2b407cde46ebade9955337ecafb1",
+            "_dom_classes": [],
+            "description": "",
+            "_model_name": "FloatProgressModel",
+            "bar_style": "success",
+            "max": 553433881,
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "value": 553433881,
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "orientation": "horizontal",
+            "min": 0,
+            "description_tooltip": null,
+            "_model_module": "@jupyter-widgets/controls",
+            "layout": "IPY_MODEL_e92ddc0046f74be288db6a0836e7a0af"
+          }
+        },
+        "581d8f3ca49e40c18039ac4979952684": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "HTMLView",
+            "style": "IPY_MODEL_00a1a03f231e453b83b709a55f38e445",
+            "_dom_classes": [],
+            "description": "",
+            "_model_name": "HTMLModel",
+            "placeholder": "​",
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "value": " 528M/528M [00:03&lt;00:00, 150MB/s]",
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "description_tooltip": null,
+            "_model_module": "@jupyter-widgets/controls",
+            "layout": "IPY_MODEL_287d45b3c55145aa97b1735556701728"
+          }
+        },
+        "df6f88ffef294408859a90f35df20a0f": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "StyleView",
+            "_model_name": "DescriptionStyleModel",
+            "description_width": "",
+            "_view_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.2.0",
+            "_model_module": "@jupyter-widgets/controls"
+          }
+        },
+        "0cd2f502bc34446094d86e3966b9c78f": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        },
+        "362d2b407cde46ebade9955337ecafb1": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "StyleView",
+            "_model_name": "ProgressStyleModel",
+            "description_width": "",
+            "_view_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.2.0",
+            "bar_color": null,
+            "_model_module": "@jupyter-widgets/controls"
+          }
+        },
+        "e92ddc0046f74be288db6a0836e7a0af": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        },
+        "00a1a03f231e453b83b709a55f38e445": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_view_name": "StyleView",
+            "_model_name": "DescriptionStyleModel",
+            "description_width": "",
+            "_view_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.2.0",
+            "_model_module": "@jupyter-widgets/controls"
+          }
+        },
+        "287d45b3c55145aa97b1735556701728": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/zieunkim/2021_Spring_ArduinoStudy/blob/main/3%EC%A3%BC%EC%B0%A8(%EA%B8%88)_CNN%EC%8B%A4%EC%8A%B5(%EA%B3%B5%EC%9C%A0)_ipynb%EC%9D%98_%EC%82%AC%EB%B3%B8.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 0. 데이터 불러오기\n",
+        "https://drive.google.com/file/d/1M8KwdmGm8EWCn_IEWAcctbUJBww-M3cF/view?usp=sharing\n",
+        "\n",
+        "1. 위 링크에 있는 zip 파일을 '드라이브에 바로가기 추가'하기(안되면 그냥 다운로드 후 내 드라이브에 업로드)\n",
+        "2. GPU 설정 후, 드라이브 마운트\n",
+        "3. zip 파일 풀기 (약 2분 소요)"
+      ],
+      "metadata": {
+        "id": "TDekbT7bHvKW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "US88Mj96AUXr",
+        "outputId": "bba6a35b-b509-4c90-8447-0b3fad5254f8"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mounted at /content/drive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#!unzip -uq “압축을 풀 zip 파일의 경로” -d “압축을 풀고자 하는 폴더의 경로”\n",
+        "!unzip -uq /content/drive/MyDrive/plant-leaf-dataset.zip -d /content/drive/MyDrive/plant-leaf-dataset"
+      ],
+      "metadata": {
+        "id": "0CrELDhBI3yO"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wAmOFLpdtXV5"
+      },
+      "source": [
+        "### 1. 데이터 분할을 위한 디렉토리 생성"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xH7lRtSlpG7c",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "outputId": "4c29944a-9fd4-4f82-c8bd-dd79e6f86f2e"
+      },
+      "source": [
+        "import os\n",
+        "import shutil\n",
+        "\n",
+        "original_dataset_dir = '/content/drive/MyDrive/plant-leaf-dataset/plant-leaf-dataset' #데이터셋이 위치한 경로 지정  \n",
+        "classes_list = os.listdir(original_dataset_dir) #해당 경로 하위에 있는 모든 폴더의 목록을 가져옴(폴더 목록 == 클래스 목록)\n",
+        "\n",
+        "''' \n",
+        "base_dir = '/content/drive/MyDrive/plant-leaf-dataset/plant-leaf-new-dataset' #train/val/test로 분할한 데이터를 저장할 폴더 생성\n",
+        "\n",
+        "os.mkdir(base_dir)\n",
+        " '''\n",
+        "train_dir = os.path.join(base_dir, 'train') #train 폴더 생성\n",
+        "#os.mkdir(train_dir)\n",
+        "validation_dir = os.path.join(base_dir, 'val') #\bvalidation 폴더 생성\n",
+        "#os.mkdir(validation_dir)\n",
+        "test_dir = os.path.join(base_dir, 'test') #test 폴더 생성\n",
+        "#os.mkdir(test_dir)\n",
+        "'''\n",
+        "for cls in classes_list: #train/val/test 폴더에 각각 클래스 목록 폴더를 생성    \n",
+        "    os.mkdir(os.path.join(train_dir, cls))\n",
+        "    os.mkdir(os.path.join(validation_dir, cls))\n",
+        "    os.mkdir(os.path.join(test_dir, cls))\n",
+        "'''"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'\\nfor cls in classes_list: #train/val/test 폴더에 각각 클래스 목록 폴더를 생성    \\n    os.mkdir(os.path.join(train_dir, cls))\\n    os.mkdir(os.path.join(validation_dir, cls))\\n    os.mkdir(os.path.join(test_dir, cls))\\n'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 2. train/validation/test 데이터 분할 및 클래스 별 데이터 수 확인"
+      ],
+      "metadata": {
+        "id": "eKJ1QY2e28i4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_v0a0PUSrdnZ",
+        "outputId": "3a0b6883-851e-4894-f189-688ece8bbaa8"
+      },
+      "source": [
+        "import math\n",
+        "for cls in classes_list: #모든 클래스에 대한 작업 반복\n",
+        "    path = os.path.join(original_dataset_dir, cls) \n",
+        "    fnames = os.listdir(path) #path 위치에 존재하는 모든 이미지 파일의 목록을 fnames에 저장\n",
+        "    \n",
+        "    #train/validation/test 의 비율을 6:2:2로 (데이터 규모에 따라 조정 가능)\n",
+        "    train_size = math.floor(len(fnames) * 0.6)\n",
+        "    validation_size = math.floor(len(fnames) * 0.2)\n",
+        "    test_size = math.floor(len(fnames) * 0.2)\n",
+        "    \n",
+        "    #train\n",
+        "    train_fnames = fnames[:train_size] #train 데이터에 해당하는 파일의 이름을 train_fnames에 저장\n",
+        "    for fname in train_fnames: #train 데이터에 대해 for문의 내용 반복\n",
+        "        src = os.path.join(path, fname) #복사할 원본 파일의 경로 지정\n",
+        "        dst = os.path.join(os.path.join(train_dir, cls), fname) #복사한 후 저장할 파일의 경로 지정\n",
+        "        shutil.copyfile(src, dst) #src의 경로에 해당하는 파일을 dst의 경로에 지정\n",
+        "    \n",
+        "    #validation\n",
+        "    validation_fnames = fnames[train_size:(validation_size + train_size)]\n",
+        "    for fname in validation_fnames:\n",
+        "        src = os.path.join(path, fname)\n",
+        "        dst = os.path.join(os.path.join(validation_dir, cls), fname)\n",
+        "        shutil.copyfile(src, dst)\n",
+        "        \n",
+        "    #test    \n",
+        "    test_fnames = fnames[(train_size + validation_size):(test_size + validation_size + train_size)]\n",
+        "    for fname in test_fnames:\n",
+        "        src = os.path.join(path, fname)\n",
+        "        dst = os.path.join(os.path.join(test_dir, cls), fname)\n",
+        "        shutil.copyfile(src, dst)\n",
+        "\n",
+        "    print(\"class(\",cls,\") Train:\",len(train_fnames), \"Validation:\",len(validation_fnames), \"Test:\",len(test_fnames))"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "class( Apple___healthy ) Train: 987 Validation: 329 Test: 329\n",
+            "class( Grape___healthy ) Train: 253 Validation: 84 Test: 84\n",
+            "class( Grape___Black_rot ) Train: 708 Validation: 236 Test: 236\n",
+            "class( Peach___Bacterial_spot ) Train: 1378 Validation: 459 Test: 459\n",
+            "class( Potato___healthy ) Train: 91 Validation: 30 Test: 30\n",
+            "class( Potato___Early_blight ) Train: 600 Validation: 200 Test: 200\n",
+            "class( Corn___Common_rust ) Train: 715 Validation: 238 Test: 238\n",
+            "class( Strawberry___Leaf_scorch ) Train: 671 Validation: 223 Test: 223\n",
+            "class( Apple___Apple_scab ) Train: 378 Validation: 126 Test: 126\n",
+            "class( Strawberry___healthy ) Train: 273 Validation: 91 Test: 91\n",
+            "class( Peach___healthy ) Train: 216 Validation: 72 Test: 72\n",
+            "class( Corn___healthy ) Train: 697 Validation: 232 Test: 232\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zYCY0sqFso7L"
+      },
+      "source": [
+        "### 3. 기본 설정"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ucURIVBmsnmC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8d313592-e54a-4ff1-fe51-82107fb2301f"
+      },
+      "source": [
+        "import torch\n",
+        "import os\n",
+        " \n",
+        "USE_CUDA = torch.cuda.is_available() #GPU 사용 가능한지 확인하는 메서드(사용할 수 있으면 TRUE, 없으면 FALSE 반환)\n",
+        "print(USE_CUDA)\n",
+        "DEVICE = torch.device(\"cuda\" if USE_CUDA else \"cpu\") #DEVICE 변수에 TRUE 이면 cuda를 FALSE 이면 cpu를 저장\n",
+        "print(DEVICE)\n",
+        "\n",
+        "BATCH_SIZE = 512 #배치사이즈 지정\n",
+        "EPOCH = 12 #에포크 지정\n",
+        "\n",
+        "import torchvision.transforms as transforms\n",
+        "data_transforms = { # transforms.Compose()는 이미지 전처리, Augmentation 등 사용, Augmentation이란? 좌우 반전, 밝기 조절, 이미지 확대 등 노이즈를 주어 더 강한 모델을 만들어 주는 기법\n",
+        "    'train': transforms.Compose([transforms.Resize([64,64]), # Resize -> 이미지의 크기를 64x64로 조정                    \n",
+        "                                 transforms.RandomHorizontalFlip(), #RandomHorizontalFlip -> 이미지를 무작위로 좌우 반전\n",
+        "                                 transforms.RandomVerticalFlip(), #RandomVerticalFlip -> 이미지를 무작위로 상하 반전\n",
+        "                                 transforms.RandomCrop(52), #RandomCrop -> 이미지의 일부를 랜덤하게 잘라서 52x52 사이즈로 변경\n",
+        "                                 transforms.ToTensor(), # ToTensor -> 이미지를 텐서 형태로 변환하고, 모든 값을 0~1 사이로 변경\n",
+        "                                 transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]) ]), #Normalize ->정규화를 위해선 평균값과 표준편차값이 필요\n",
+        "                                                                                                        #            첫번째[]는 R,G,B 채널 값에서 정규화를 적용할 평균값 \n",
+        "                                                                                                        #            두번째[]는 R,G,B 채널 값에서 정규화를 적용할 표준편차값 \n",
+        "                                                                                                        #            이 값은 이미지넷 데이터의 값이고, 정규화는 Local Minimum에 빠지는 것을 방지\n",
+        "    'val': transforms.Compose([transforms.Resize([64,64]), \n",
+        "                               #validation data는 Augmentation에 해당하는 부분을 제외하고 동일하게 전처리 \n",
+        "                               transforms.RandomCrop(52), \n",
+        "                               transforms.ToTensor(),\n",
+        "                               transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]) ])\n",
+        "}"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "cuda\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 4. 데이터 로더"
+      ],
+      "metadata": {
+        "id": "e0zmtPpS9oAW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "STs5oRi2sy12",
+        "outputId": "2449249f-1eb4-4174-b692-7e33e4482bd4"
+      },
+      "source": [
+        "from torchvision.datasets import ImageFolder #이미지 데이터는 하나의 클래스가 하나의 폴더에 대응되기 때문에 데이터셋을 불러올 때 ImageFolder를 사용\n",
+        "\n",
+        "# ImageFolder로 데이터셋 불러오기 -> root : 데이터 불러 올 경로 설정, transform : 앞서 설정한 전처리 방법 지정(불러오기 편하게 딕셔너리 형태로 구성)\n",
+        "image_datasets = {x: ImageFolder(root=os.path.join(base_dir, x), transform=data_transforms[x]) for x in ['train', 'val']} \n",
+        "\n",
+        "# DataLoader로 불러온 이미지 데이터를 주어진 조건에 따라 미니 배치 단위로 분리 -> shuffle=True : 데이터의 순서가 섞여 학습시에 Label 정보의 순서를 기억하는 것을 방지 할 수 있음 필수!\n",
+        "dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=BATCH_SIZE, shuffle=True, num_workers=4) for x in ['train', 'val']} \n",
+        "\n",
+        "#train/validation의 총 개수를 저장\n",
+        "dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}\n",
+        "\n",
+        "#12개 클래스의 목록을 저장\n",
+        "class_names = image_datasets['train'].classes\n",
+        "\n",
+        "print(class_names)\n",
+        "print(len(class_names))"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Apple___Apple_scab', 'Apple___healthy', 'Corn___Common_rust', 'Corn___healthy', 'Grape___Black_rot', 'Grape___healthy', 'Peach___Bacterial_spot', 'Peach___healthy', 'Potato___Early_blight', 'Potato___healthy', 'Strawberry___Leaf_scorch', 'Strawberry___healthy']\n",
+            "12\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.\n",
+            "  cpuset_checked))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 5. 전이학습 모델 불러오기\n",
+        "1. 모델만 불러와서 구조 print 해보기\n",
+        "2. 분류층 바꾸고 print 해보기"
+      ],
+      "metadata": {
+        "id": "Uy5j3kc79q6x"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wZEFZgmTs2Vt",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 888,
+          "referenced_widgets": [
+            "440b5446030a42c09e4b61d346490ac9",
+            "8a9e954eb2f943c5b8cd44644d0065b8",
+            "9a2b0e2c1b424cf9aa07c30674fb69ba",
+            "92713dcda985456f9beeb8445b8c5604",
+            "581d8f3ca49e40c18039ac4979952684",
+            "df6f88ffef294408859a90f35df20a0f",
+            "0cd2f502bc34446094d86e3966b9c78f",
+            "362d2b407cde46ebade9955337ecafb1",
+            "e92ddc0046f74be288db6a0836e7a0af",
+            "00a1a03f231e453b83b709a55f38e445",
+            "287d45b3c55145aa97b1735556701728"
+          ]
+        },
+        "outputId": "61a062b0-9f8d-42ea-c414-d089aaa58308"
+      },
+      "source": [
+        "from torchvision import models #pytorch 공식문서에서 확인 한 것처럼, 여기서 여러 모델을 불러올 수 있음\n",
+        "import torch.nn as nn\n",
+        "import torch.optim as optim\n",
+        "'''\n",
+        "#resnet18/34/50 \n",
+        "model = models.resnet50(pretrained=True) #pretrained=True로 설정하면 pre-trained model의 parameter값을 그대로 가져옴, False로 설정하면 모델의 아키텍처만 가져오고 parameter는 랜덤 설정\n",
+        "num_ftrs = model.fc.in_features #모델의 마지막 레이어의 입력 채널의 수를 저장(in_features는 해당 레이어의 입력 채널 수를 의미)   \n",
+        "model.fc = nn.Linear(num_ftrs, len(class_names)) #모델의 마지막 레이어를 새로운 레이어로 교체 (입력 채널 수는 기존 레이어와 동일, 출력 채널 수를 우리가 원하는 수로 설정하는 것! 여기서는 클래스 수 12개) \n",
+        "\n",
+        "'''\n",
+        "#vgg16/19\n",
+        "model = models.vgg16(pretrained=True)\n",
+        "#model.classifier[6].out_features = len(class_names) #마지막 레이어를 교체하는 방법이 약간 다름, print 해서 구조 확인하면서 이해\n",
+        "'''\n",
+        "#mobilenet_v2\n",
+        "model = models.mobilenet_v2(pretrained=True)\n",
+        "#model.classifier[1].out_features = len(class_names)\n",
+        "\n",
+        "#mobilnet_v3_small\n",
+        "model = models.mobilenet_v3_small(pretrained=True)\n",
+        "#model.classifier[3].out_features = len(class_names)\n",
+        "'''\n",
+        "\n",
+        "model = model.to(DEVICE) #모델 gpu에 태우기\n",
+        "print(model)"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "Downloading: \"https://download.pytorch.org/models/vgg16-397923af.pth\" to /root/.cache/torch/hub/checkpoints/vgg16-397923af.pth\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "application/vnd.jupyter.widget-view+json": {
+              "model_id": "440b5446030a42c09e4b61d346490ac9",
+              "version_minor": 0,
+              "version_major": 2
+            },
+            "text/plain": [
+              "  0%|          | 0.00/528M [00:00<?, ?B/s]"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "VGG(\n",
+            "  (features): Sequential(\n",
+            "    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (1): ReLU(inplace=True)\n",
+            "    (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (3): ReLU(inplace=True)\n",
+            "    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n",
+            "    (5): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (6): ReLU(inplace=True)\n",
+            "    (7): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (8): ReLU(inplace=True)\n",
+            "    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n",
+            "    (10): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (11): ReLU(inplace=True)\n",
+            "    (12): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (13): ReLU(inplace=True)\n",
+            "    (14): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (15): ReLU(inplace=True)\n",
+            "    (16): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n",
+            "    (17): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (18): ReLU(inplace=True)\n",
+            "    (19): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (20): ReLU(inplace=True)\n",
+            "    (21): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (22): ReLU(inplace=True)\n",
+            "    (23): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n",
+            "    (24): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (25): ReLU(inplace=True)\n",
+            "    (26): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (27): ReLU(inplace=True)\n",
+            "    (28): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "    (29): ReLU(inplace=True)\n",
+            "    (30): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n",
+            "  )\n",
+            "  (avgpool): AdaptiveAvgPool2d(output_size=(7, 7))\n",
+            "  (classifier): Sequential(\n",
+            "    (0): Linear(in_features=25088, out_features=4096, bias=True)\n",
+            "    (1): ReLU(inplace=True)\n",
+            "    (2): Dropout(p=0.5, inplace=False)\n",
+            "    (3): Linear(in_features=4096, out_features=4096, bias=True)\n",
+            "    (4): ReLU(inplace=True)\n",
+            "    (5): Dropout(p=0.5, inplace=False)\n",
+            "    (6): Linear(in_features=4096, out_features=1000, bias=True)\n",
+            "  )\n",
+            ")\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 6. Layer Freeze"
+      ],
+      "metadata": {
+        "id": "4zzyFflRf13T"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2wf8IIPgs3vs"
+      },
+      "source": [
+        "cnt = 0 #몇 번째 Layer인지 나타내는 변수 cnt 설정\n",
+        "for child in model.features: #모델의 모든 Layer 정보를 담고 있음 (vgg, mobilenet 계열은 model.features)\n",
+        "    cnt += 1 \n",
+        "    if cnt < 8: #resnet50기준 10개의 Layer중 1~5개는 Freeze하고, 6~10은 학습 시 parameter를 업데이트 하도록!\n",
+        "        #print(child)\n",
+        "        for param in model.features.parameters(): #vgg, mobilenet 계열은 model.features.parameters()\n",
+        "            param.requires_grad = False  #False -> NO UPDATE(FREEZE), True -> UPDATE(기본값)"
+      ],
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 7. 손실함수, 최적화함수, 스케쥴러 설정\n",
+        "- Adam vs SGD\n",
+        "- learning rate는 작게!\n",
+        "- 미리 학습 코드까지 실행!"
+      ],
+      "metadata": {
+        "id": "onKCFqbZf9oZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#모델 학습에 사용하는 Loss 함수를 지정\n",
+        "criterion = nn.CrossEntropyLoss()\n",
+        "\n",
+        "#Optimizer는 Adam, filter와 lambda를 사용하는 이유 : param.requires_grad = True로 설정된 Layer의 parameter만을 업데이트 하기 위해서!\n",
+        "optimizer_ft = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=0.00001) \n",
+        " \n",
+        "from torch.optim import lr_scheduler\n",
+        "# 에포크에 따라 Learning Rate를 변경하는 역할 (7 에포크마다 0.1씩 곱해 LR을 감소시킴), Why? : 학습 보폭을 정하는 일은 매우 중요한데, 처음엔 크게 -> 학습 진행될 수록 작게 설정하는 것이 좋다고 알려짐, but 아직 연구중\n",
+        "exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)"
+      ],
+      "metadata": {
+        "id": "LfwDUXcaD_uD"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 6. 모델 학습 및 저장"
+      ],
+      "metadata": {
+        "id": "t86IqtKnK8Qr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tXFjVMs3s5Jv"
+      },
+      "source": [
+        "# 전이학습 모델 학습 및 검증\n",
+        "import time\n",
+        "import copy\n",
+        "import matplotlib.pyplot as plt\n",
+        "def train_model(model, criterion, optimizer, scheduler, num_epochs=10):\n",
+        "    \n",
+        "    train_losses , train_accuracy = [],[] #그래프 그리기 위해서 train에 대한 loss,accuracy 저장\n",
+        "    val_losses , val_accuracy = [],[] #그래프 그리기 위해서 validation에 대한 loss,accuracy 저장\n",
+        "    best_model_wts = copy.deepcopy(model.state_dict())  #정확도가 가장 높은 모델을 저장\n",
+        "    best_acc = 0.0 #정확도가 가장 높은 모델의 정확도 저장\n",
+        "    \n",
+        "    for epoch in range(num_epochs):\n",
+        "        print('-------------- epoch {} ----------------'.format(epoch+1)) \n",
+        "        since = time.time() #한 에포크 돌 때 소요되는 시간 측정(시작 시각 저장)                                    \n",
+        "        for phase in ['train', 'val']: #한 에포크 돌 때 train 한 번, validation 한 번씩 각각 진행\n",
+        "            if phase == 'train': \n",
+        "                model.train() #train이면 학습 모드\n",
+        "            else:\n",
+        "                model.eval() #validation이면 평가 모드(평가 때 사용하지 말아야 할 작업들 알아서 꺼줌, dropout이나 batchnorm layer 같은 것들)     \n",
+        " \n",
+        "            running_loss = 0.0   #모든 데이터의 loss를 합해서 저장\n",
+        "            running_corrects = 0 #정확하게 예측한 경우의 수를 저장\n",
+        "\n",
+        "            for inputs, labels in dataloaders[phase]: #모델의 현재 모드(train or validation)에 해당하는 Dataloader에서 데이터를 받는 for문\n",
+        "                inputs = inputs.to(DEVICE) #데이터를 gpu에 태움 \n",
+        "                labels = labels.to(DEVICE) #데이터의 라벨값을 gpu에 태움\n",
+        "                \n",
+        "                optimizer.zero_grad() #학습 진행하면 이전 Batch의 Gradient값이 Optimizer에 저장될 것이므로 초기화 해주고 시작해야 함\n",
+        "                \n",
+        "                with torch.set_grad_enabled(phase == 'train'): #set_grad_enabled를 이용하면 train 모드에서만 모델의 Gradient를 업데이트 하도록 설정 할 수 있음\n",
+        "                    outputs = model(inputs) #드디어 데이터를 모델에 입력!\n",
+        "                    _, preds = torch.max(outputs, 1) #모델에 입력된 데이터가 12개의 클래스에 속할 확률값 출력, 이 중 가장 높은 값의 인덱스를 예측값으로 preds에 저장\n",
+        "                    loss = criterion(outputs, labels) #모델의 예측값과 정답값 사이의 Loss를 계산(criterion 함수는 위에서 미리 설정해 둔 것)\n",
+        "    \n",
+        "                    if phase == 'train':   \n",
+        "                        loss.backward() #계산한 loss값을 이용하여 BackPropagation을 통해 계산한 Gradient값을 parameter에 할당하고,\n",
+        "                        optimizer.step() #모델의 parameter 업데이트\n",
+        " \n",
+        "                running_loss += loss.item() * inputs.size(0) #모든 데이터의 loss를 합해서 저장하기 위해, 하나의 미니 배치에 대한 loss값에 데이터의 수를 곱해서 더함 (inputs.size(0)이 미니 배치의 수) \n",
+        "                running_corrects += torch.sum(preds == labels.data) #예측값과 정답값이 같으면 증가!\n",
+        "\n",
+        "            if phase == 'train':  \n",
+        "                scheduler.step() #위에서 미리 설정한 Scheduler 실행\n",
+        " \n",
+        "            epoch_loss = running_loss/dataset_sizes[phase] #해당 에포크의 loss를 계산하기 위해 running_loss를 데이터셋 사이즈로 나눔\n",
+        "            epoch_acc = running_corrects.double()/dataset_sizes[phase] #정확도도 마찬가지로 running_corrects를 데이터셋 사이즈로 나눔\n",
+        " \n",
+        "            print('{} Loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc)) #해당 에포크의 loss와 정확도를 매번 출력\n",
+        "\n",
+        "            if phase == 'train': #그래프 그리기 위해 train 데이터의 loss와 accuracy 따로 저장\n",
+        "                train_losses.append(epoch_loss)\n",
+        "                train_accuracy.append(epoch_acc)\n",
+        "            if phase == 'val': #그래프 그리기 위해 \bvalidation 데이터의 loss와 accuracy 따로 저장\n",
+        "                val_losses.append(epoch_loss)\n",
+        "                val_accuracy.append(epoch_acc)\n",
+        "          \n",
+        "            if phase == 'val' and epoch_acc > best_acc: #validation 모드에서 정확도가 최고 정확도 보다 높으면 업데이트\n",
+        "                best_acc = epoch_acc\n",
+        "                best_model_wts = copy.deepcopy(model.state_dict()) #최고 정확도를 가진 모델을 best_model_wts 변수에 저장\n",
+        " \n",
+        "        time_elapsed = time.time() - since #한 에포크 돌 때 소요되는 시간 측정(종료 시각 - 시작 시각) \n",
+        "        print('Completed in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60)) #계산한 시간 분과 초로 출력\n",
+        "\n",
+        "    #학습 종료 후 \n",
+        "    print('Best validation Acc: {:4f}'.format(best_acc)) #validation 중 최고 정확도 출력\n",
+        "\n",
+        "    #train과 validation의 loss, accuracy 그래프 출력 -> 과적합 여부 등 판단\n",
+        "    plt.plot(range(1,len(train_losses)+1),train_losses,'bo',label = 'training loss')\n",
+        "    plt.plot(range(1,len(val_losses)+1),val_losses,'r',label = 'validation loss')\n",
+        "    plt.legend()\n",
+        "    plt.plot(range(1,len(train_accuracy)+1),train_accuracy,'co',label = 'training accuracy')\n",
+        "    plt.plot(range(1,len(val_accuracy)+1),val_accuracy,'m',label = 'validation accuracy')\n",
+        "    plt.legend()\n",
+        "\n",
+        "    #정확도가 가장 높았던 모델을 불러와서 반환\n",
+        "    model.load_state_dict(best_model_wts) \n",
+        "    return model"
+      ],
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        },
+        "id": "EQ6wBtMAs6pw",
+        "outputId": "7282b8a1-1680-45c7-c577-41e3c542e0b1"
+      },
+      "source": [
+        "# 전이학습 실행\n",
+        "model = train_model(model, criterion, optimizer_ft, exp_lr_scheduler, num_epochs=EPOCH) \n",
+        "\n",
+        "# 반환 받은 정확도가 가장 높았던 모델을 torch.save 이용해서 저장 (모델 별로 이름 변경해서 저장!)\n",
+        "torch.save(model, '/content/drive/MyDrive/plant-leaf-dataset/resnet50.pt')"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-------------- epoch 1 ----------------\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.\n",
+            "  cpuset_checked))\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "train Loss: 12.3530 Acc: 0.0077\n",
+            "val Loss: 6.7491 Acc: 0.0425\n",
+            "Completed in 3m 40s\n",
+            "-------------- epoch 2 ----------------\n",
+            "train Loss: 6.0380 Acc: 0.0848\n",
+            "val Loss: 4.2827 Acc: 0.2485\n",
+            "Completed in 0m 43s\n",
+            "-------------- epoch 3 ----------------\n",
+            "train Loss: 3.9610 Acc: 0.2604\n",
+            "val Loss: 2.8758 Acc: 0.4272\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 4 ----------------\n",
+            "train Loss: 2.7794 Acc: 0.4139\n",
+            "val Loss: 2.0156 Acc: 0.5505\n",
+            "Completed in 0m 43s\n",
+            "-------------- epoch 5 ----------------\n",
+            "train Loss: 2.1529 Acc: 0.4902\n",
+            "val Loss: 1.5394 Acc: 0.6131\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 6 ----------------\n",
+            "train Loss: 1.7469 Acc: 0.5506\n",
+            "val Loss: 1.2540 Acc: 0.6690\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 7 ----------------\n",
+            "train Loss: 1.5096 Acc: 0.5993\n",
+            "val Loss: 1.0748 Acc: 0.7088\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 8 ----------------\n",
+            "train Loss: 1.3834 Acc: 0.6206\n",
+            "val Loss: 1.0628 Acc: 0.7136\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 9 ----------------\n",
+            "train Loss: 1.3838 Acc: 0.6247\n",
+            "val Loss: 1.0534 Acc: 0.7184\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 10 ----------------\n",
+            "train Loss: 1.3721 Acc: 0.6242\n",
+            "val Loss: 1.0605 Acc: 0.7102\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 11 ----------------\n",
+            "train Loss: 1.3531 Acc: 0.6237\n",
+            "val Loss: 1.0266 Acc: 0.7201\n",
+            "Completed in 0m 44s\n",
+            "-------------- epoch 12 ----------------\n",
+            "train Loss: 1.3425 Acc: 0.6266\n",
+            "val Loss: 1.0278 Acc: 0.7254\n",
+            "Completed in 0m 43s\n",
+            "Best validation Acc: 0.725354\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "image/png": "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\n",
+            "text/plain": [
+              "<Figure size 432x288 with 1 Axes>"
+            ]
+          },
+          "metadata": {
+            "needs_background": "light"
+          }
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UjkyMbUEuMqi"
+      },
+      "source": [
+        "### 7. 모델 평가"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fPwYDjEHtCXm",
+        "outputId": "5d567dd9-82d6-4a78-f41c-d89d97c0aa6f"
+      },
+      "source": [
+        "# 전이학습 평가 전처리 (위에서 설명한 것과 동일)\n",
+        "data_transforms = transforms.Compose([ \n",
+        "        transforms.Resize([64,64]),  \n",
+        "        transforms.RandomCrop(52),  \n",
+        "        transforms.ToTensor(),\n",
+        "        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]) \n",
+        "        ])\n",
+        "\n",
+        "#경로 맞춰서 변경해 주세요!\n",
+        "test_dataset = ImageFolder(root='/content/drive/MyDrive/plant-leaf-dataset/plant-leaf-new-dataset/test', transform=data_transforms) \n",
+        "test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)\n",
+        "\n",
+        "# 모델 평가 함수\n",
+        "def evaluate(model, test_loader):\n",
+        "    model.eval() #모델을 평가 모드로 설정\n",
+        "    test_loss = 0 #미니 배치 별로 loss를 합산해서 저장\n",
+        "    correct = 0 #정확하게 예측한 수 저장   \n",
+        "    with torch.no_grad(): #해당 메서드를 이용해서 parameter 업데이트 방지\n",
+        "        for data, target in test_loader:  \n",
+        "            data, target = data.to(DEVICE), target.to(DEVICE) #데이터와 라벨을 불러오면서 gpu에 태움  \n",
+        "            output = model(data) #데이터를 모델에 입력           \n",
+        "            test_loss += torch.nn.functional.cross_entropy(output,target, reduction='sum').item() #모델의 예측값과 정답값 사이의 loss 계산\n",
+        "            pred = output.max(1, keepdim=True)[1]  #모델에 입력된 데이터가 12개의 클래스에 속할 확률값 출력, 이 중 가장 높은 값의 인덱스를 예측값으로 pred에 저장\n",
+        "            correct += pred.eq(target.view_as(pred)).sum().item() #target.view_as(pred)를 이용해 target의 텐서 구조를 pred의 텐서와 같은 모양으로 재정렬 (모델 만들 때 쓰는 view와 비슷 view는 숫자 직접 지정)\n",
+        "                                                                  #eq는 비교 연산자로 pred와 target.view_as(pred)의 값이 일치하면 1, 일치하지 않으면 0 반환\n",
+        "   \n",
+        "    test_loss /= len(test_loader.dataset) #모든 미니 배치에서 합한 loss값을 배치 수로 나누어 loss값의 평균 구함\n",
+        "    test_accuracy = 100. * correct / len(test_loader.dataset) #마찬가지로 정확도의 평균도 구함\n",
+        "    \n",
+        "    return test_loss, test_accuracy #계산한 Test 데이터의 loss와 정확도 반환\n",
+        "\n",
+        "# 전이학습 모델 평가 결과\n",
+        "model=torch.load('/content/drive/MyDrive/plant-leaf-dataset/resnet50.pt') #torch.load를 이용해서 원하는 모델 불러오기!\n",
+        "test_loss, test_accuracy = evaluate(model, test_loader) #평가 함수 이용해서 Test 데이터에 대한 loss 및 정확도 측정\n",
+        "print('model test acc:  ', test_accuracy) #평가 정확도 출력"
+      ],
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.\n",
+            "  cpuset_checked))\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "model test acc:   72.84276126558005\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(과제) 한 가지 이상의 변화를 준 후 학습을 돌려서 결과와 함께 간단한 설명을 업로드 해주세요 😀\n",
+        "\n",
+        "예시 : 다른 전이학습 모델 사용, freeze 시키는 구간 변화, 직접 짠 모델과의 성능 비교, 데이터 수의 변화, optimizer에 대한 실험, epoch 늘리기, 등등"
+      ],
+      "metadata": {
+        "id": "maEk9ITatoai"
+      }
+    }
+  ]
+}
